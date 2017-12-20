@@ -47,21 +47,23 @@ void setup() {
      ;
           
   textFont(font);
+  cp5.hide(); // this is how to hide cp5
+  cp5.show(); // this is how to show cp5
 }
 
 void draw() {
   background(0);
   fill(255);
-  print(cp5.get(Textfield.class,"Player 1 Name").getText());print("\t");
+  /*print(cp5.get(Textfield.class,"Player 1 Name").getText());print("\t");
   print(cp5.get(Textfield.class,"Player 2 Name").getText());print("\t");
   print(cp5.get(Textfield.class,"Player 1 Email").getText());print("\t");
   println(cp5.get(Textfield.class,"Player 2 Email").getText());
-  text(textValue, 360,180);
+  text(textValue, 360,180);*/
 }
 
-public void clear() {
+/*public void clear() {
   cp5.get(Textfield.class,"Player 1 Name").clear();
-}
+}*/
 
 void controlEvent(ControlEvent theEvent) {
   if(theEvent.isAssignableFrom(Textfield.class)) {
@@ -73,10 +75,10 @@ void controlEvent(ControlEvent theEvent) {
 }
 
 
-public void input(String theText) {
+/*public void input(String theText) {
   // automatically receives results from controller input
   println("a textfield event for controller 'input' : "+theText);
-}
+}*/
 
 
 
