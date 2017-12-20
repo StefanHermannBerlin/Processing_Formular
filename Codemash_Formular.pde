@@ -48,7 +48,7 @@ void setup() {
           
   textFont(font);
   cp5.hide(); // this is how to hide cp5
-  cp5.show(); // this is how to show cp5
+  cp5.show(); // this is how to show 
 }
 
 void draw() {
